@@ -1,0 +1,25 @@
+{
+  "name": "@amtracking/checker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amtrak price checker — runs as a GitHub Actions cron job",
+  "main": "dist/jobs/checkPrices.js",
+  "scripts": {
+    "check": "ts-node src/jobs/checkPrices.ts",
+    "check:dry": "DRY_RUN=true ts-node src/jobs/checkPrices.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.4",
+    "axios": "^1.7.2",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/nodemailer": "^6.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

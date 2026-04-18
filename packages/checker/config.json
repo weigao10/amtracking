@@ -1,0 +1,13 @@
+{
+  "watches": [
+    {
+      "id": "watch-1",
+      "origin": "NYP",
+      "destination": "WAS",
+      "date": "2026-06-15",
+      "targetPrice": 89,
+      "class": "coach",
+      "active": true
+    }
+  ]
+}
